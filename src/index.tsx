@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import AssetHelper from './helpers/avatar.helper';
 
+function Chat() {
+  return AssetHelper.sortAvatar();
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Chat />
   </React.StrictMode>,
   document.getElementById('root')
 );

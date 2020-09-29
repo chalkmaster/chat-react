@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.chat_avatar {
+  background-image: url('./assets/avatars.jpg');
+  background-repeat: no-repeat;
+  height: 88px;
+  width: 88px;
+}
