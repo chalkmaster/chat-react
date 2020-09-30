@@ -1,10 +1,16 @@
 import React from "react";
+import '../index.css';
+import Avatars from '../assets/avatars.jpg';
 
 export default class AvatarHelper {
 
   static sortAvatar() {
     const sortedPosition = Math.floor(Math.random() * 16);
     return AvatarHelper.getAvatar(sortedPosition)
+  }
+
+  static sortAvatarBorderColor() {
+    return `#${Math.round(Math.random() * 1000000)}`;
   }
 
   static getAvatar(position: number) {
@@ -21,6 +27,9 @@ export default class AvatarHelper {
           {
             backgroundPositionX: avatarPositionX,
             backgroundPositionY: avatarPositionY,
+            backgroundImage: `url(${Avatars})`,
+            height: '100%',
+            width: '100%',
           }
         }
       ></div>

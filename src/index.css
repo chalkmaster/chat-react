@@ -1,20 +1,118 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.chat_avatar {
-  background-image: url('./assets/avatars.jpg');
-  background-repeat: no-repeat;
-  height: 88px;
-  width: 88px;
+.chat_userlist_user_avatar {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
+
+.chat_userlist_user {
+  list-style: none;
+}
+
+.chat_userlist_user > div {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.chat_userlist_user_avatar > .chat_user_avatar {
+  zoom: 40%;
+  border-radius: 50%;
+}
+
+.chat_userlist_user_nick {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 33px;
+  padding-left: 8px;
+  font-size: 12px;
+}
+
+.chat_userlist {
+  width: 30%;
+  min-width: 180px;
+  background-color: bisque;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.chat_messages {
+  min-width: 300px;
+  width: 70%;
+}
+
+.chat_room {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_command {
+  width: 100%;
+  min-width: 480px;
+  padding: 5px;
+  background-color: darkseagreen;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.chat_messages li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+}
+
+.chat_message_avatar {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
+
+.chat_message_avatar > .chat_user_avatar {
+  zoom: 40%;
+  border-radius: 50%;
+}
+
+.chat_message_right {
+  flex-direction: row-reverse;
+}
+.chat_message_right > .chat_message_text {
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.chat_message_left > .chat_message_text {
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.chat_message_text {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.chat_messages ul {
+  width: 100%;
+  padding: 0;
+}
+
+.chat_command input {
+  width: 70%;
+}
+
+.chat_room_top {
+  display: flex;
 }

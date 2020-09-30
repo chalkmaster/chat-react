@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Room from './components/room';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import AssetHelper from './helpers/avatar.helper';
+// import AssetHelper from './helpers/avatar.helper';
 
 function Chat() {
-  return AssetHelper.sortAvatar();
+  return <Room />;
 }
 ReactDOM.render(
-  <React.StrictMode>
-    <Chat />
-  </React.StrictMode>,
+  <Chat />,
   document.getElementById('root')
 );
 
