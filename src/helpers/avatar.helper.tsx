@@ -16,7 +16,7 @@ export default class AvatarHelper {
     const avatarPositionY = topBorderAdjust + (avatarLine * 88) * -1;
     return (
       <div
-        className="chat_avatar"
+        className="chat_user_avatar"
         style={
           {
             backgroundPositionX: avatarPositionX,
